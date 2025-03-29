@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { ThemeProvider } from '@/components/ui/theme-provider';
 import { Navbar } from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import { Toaster } from '@/components/ui/sonner';
@@ -24,17 +23,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${inter.variable} antialiased`}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange
-                >
-                    <Navbar />
-                    {children}
-                    <Toaster />
-                    <Footer />
-                </ThemeProvider>
+                <Navbar />
+                {children}
+                <Toaster />
+                <Footer />
             </body>
         </html>
     );

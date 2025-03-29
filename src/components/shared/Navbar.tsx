@@ -7,7 +7,6 @@ import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { ModeToggle } from './ModeToggle';
 
 export function Navbar() {
     const [open, setOpen] = React.useState(false);
@@ -66,16 +65,13 @@ export function Navbar() {
                             </Link>
                         ))}
                     </div>
-                    <div className="flex items-center gap-6">
-                        <ModeToggle />
-                        <Button size="lg" className="rounded-full">
-                            Free SEO Audit
-                        </Button>
-                    </div>
+
+                    <Button size="lg" className="rounded-full">
+                        Free SEO Audit
+                    </Button>
                 </nav>
 
                 <div className="flex flex-1 items-center justify-end md:hidden">
-                    <ModeToggle />
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
                             <Button
