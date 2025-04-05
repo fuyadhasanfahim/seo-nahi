@@ -13,7 +13,7 @@ export default function CallToAction() {
             <div className="container px-4 md:px-6 max-w-screen-xl">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-amulya">
                             Ready to Improve Your SEO Rankings?
                         </h2>
                         <p className="mx-auto max-w-[600px] text-gray-800 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -35,7 +35,7 @@ export default function CallToAction() {
                             <Button
                                 type="submit"
                                 size="lg"
-                                className="bg-gray-800 text-white hover:bg-gray-900 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+                                className="bg-gray-800 text-white hover:bg-gray-900 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 font-amulya"
                             >
                                 Get Free Audit
                             </Button>

@@ -22,6 +22,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link
+                    href="https://api.fontshare.com/v2/css?f[]=synonym@400&f[]=amulya@700&display=swap"
+                    rel="stylesheet"
+                />
+            </head>
             <body className={`${inter.variable} antialiased`}>
                 <Navbar />
                 {children}

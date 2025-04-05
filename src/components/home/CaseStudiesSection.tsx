@@ -16,10 +16,10 @@ export default function CaseStudiesSection() {
             <div className="container max-w-screen-xl">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary font-amulya">
                             Case Studies
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl font-amulya">
                             Our Success Stories
                         </h2>
                         <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -33,14 +33,20 @@ export default function CaseStudiesSection() {
                     className="w-full max-w-4xl mx-auto mt-8"
                 >
                     <TabsList className="grid w-full grid-cols-3">
-                        <TabsTrigger value="ecommerce">E-commerce</TabsTrigger>
-                        <TabsTrigger value="saas">SaaS</TabsTrigger>
-                        <TabsTrigger value="local">Local Business</TabsTrigger>
+                        <TabsTrigger value="ecommerce" className="font-amulya">
+                            E-commerce
+                        </TabsTrigger>
+                        <TabsTrigger value="saas" className="font-amulya">
+                            SaaS
+                        </TabsTrigger>
+                        <TabsTrigger value="local" className="font-amulya">
+                            Local Business
+                        </TabsTrigger>
                     </TabsList>
                     <TabsContent value="ecommerce" className="mt-6">
                         <Card>
                             <CardHeader className="pb-4">
-                                <CardTitle>
+                                <CardTitle className="font-amulya">
                                     278% Organic Traffic Growth for Online
                                     Retailer
                                 </CardTitle>
@@ -59,7 +65,7 @@ export default function CaseStudiesSection() {
                                         content marketing.
                                     </p>
                                     <div className="space-y-2">
-                                        <div className="font-medium">
+                                        <div className="font-medium font-amulya">
                                             Results:
                                         </div>
                                         <ul className="space-y-1 text-sm">
@@ -88,7 +94,7 @@ export default function CaseStudiesSection() {
                                     </div>
                                     <Link
                                         href="/case-studies/ecommerce"
-                                        className="inline-flex items-center text-sm font-medium text-primary"
+                                        className="inline-flex items-center text-sm font-medium text-primary font-amulya"
                                     >
                                         Read full case study{' '}
                                         <ArrowRight className="ml-1 h-4 w-4" />

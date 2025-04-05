@@ -8,10 +8,10 @@ export default function Testimonials() {
             <div className="container max-w-screen-xl">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary font-amulya">
                             Testimonials
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl font-amulya">
                             What Our Clients Say
                         </h2>
                         <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -61,7 +61,9 @@ export default function Testimonials() {
                                 />
                             </div>
                             <div>
-                                <p className="font-medium">Sarah Johnson</p>
+                                <p className="font-medium font-amulya">
+                                    Sarah Johnson
+                                </p>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">
                                     Marketing Director, TechSolutions Inc.
                                 </p>
@@ -106,7 +108,9 @@ export default function Testimonials() {
                                 />
                             </div>
                             <div>
-                                <p className="font-medium">Michael Rodriguez</p>
+                                <p className="font-medium font-amulya">
+                                    Michael Rodriguez
+                                </p>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">
                                     CEO, GrowthBox E-commerce
                                 </p>
@@ -151,7 +155,9 @@ export default function Testimonials() {
                                 />
                             </div>
                             <div>
-                                <p className="font-medium">Jennifer Lee</p>
+                                <p className="font-medium font-amulya">
+                                    Jennifer Lee
+                                </p>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">
                                     Owner, Bright Smile Dental Clinic
                                 </p>
@@ -162,7 +168,7 @@ export default function Testimonials() {
                 <div className="mt-8 flex justify-center">
                     <Link
                         href="/testimonials"
-                        className="inline-flex items-center text-sm font-medium text-primary"
+                        className="inline-flex items-center text-sm font-medium text-primary font-amulya"
                     >
                         View all testimonials{' '}
                         <ArrowRight className="ml-1 h-4 w-4" />

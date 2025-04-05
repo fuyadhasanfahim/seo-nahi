@@ -8,10 +8,10 @@ export default function BlogsSection() {
             <div className="container max-w-screen-xl">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary font-amulya">
                             Latest Insights
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl font-amulya">
                             SEO Blog & Resources
                         </h2>
                         <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -34,7 +34,7 @@ export default function BlogsSection() {
                             <div className="text-sm text-gray-500 dark:text-gray-400">
                                 March 15, 2025
                             </div>
-                            <h3 className="mt-1 text-xl font-bold">
+                            <h3 className="mt-1 text-xl font-bold font-amulya">
                                 Core Web Vitals: How Page Experience Impacts
                                 Your Rankings
                             </h3>
@@ -45,7 +45,7 @@ export default function BlogsSection() {
                             </p>
                             <Link
                                 href="/blog/core-web-vitals"
-                                className="mt-3 inline-flex items-center text-sm font-medium text-primary"
+                                className="mt-3 inline-flex items-center text-sm font-medium text-primary font-amulya"
                             >
                                 Read more{' '}
                                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -65,7 +65,7 @@ export default function BlogsSection() {
                             <div className="text-sm text-gray-500 dark:text-gray-400">
                                 March 8, 2025
                             </div>
-                            <h3 className="mt-1 text-xl font-bold">
+                            <h3 className="mt-1 text-xl font-bold font-amulya">
                                 The Impact of AI on SEO: What You Need to Know
                             </h3>
                             <p className="mt-2 text-gray-500 dark:text-gray-400 line-clamp-2">
@@ -75,7 +75,7 @@ export default function BlogsSection() {
                             </p>
                             <Link
                                 href="/blog/ai-in-seo"
-                                className="mt-3 inline-flex items-center text-sm font-medium text-primary"
+                                className="mt-3 inline-flex items-center text-sm font-medium text-primary font-amulya"
                             >
                                 Read more{' '}
                                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -95,7 +95,7 @@ export default function BlogsSection() {
                             <div className="text-sm text-gray-500 dark:text-gray-400">
                                 February 28, 2025
                             </div>
-                            <h3 className="mt-1 text-xl font-bold">
+                            <h3 className="mt-1 text-xl font-bold font-amulya">
                                 Local SEO in 2025: Strategies for Dominating
                                 Regional Search
                             </h3>
@@ -105,7 +105,7 @@ export default function BlogsSection() {
                             </p>
                             <Link
                                 href="/blog/local-seo-2025"
-                                className="mt-3 inline-flex items-center text-sm font-medium text-primary"
+                                className="mt-3 inline-flex items-center text-sm font-medium text-primary font-amulya"
                             >
                                 Read more{' '}
                                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -116,7 +116,7 @@ export default function BlogsSection() {
                 <div className="mt-8 flex justify-center">
                     <Link
                         href="/blog"
-                        className="inline-flex items-center text-sm font-medium text-primary"
+                        className="inline-flex items-center text-sm font-medium text-primary font-amulya"
                     >
                         Explore all articles{' '}
                         <ArrowRight className="ml-1 h-4 w-4" />

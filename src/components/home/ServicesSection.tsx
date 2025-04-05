@@ -21,10 +21,10 @@ export default function ServicesSection() {
             <div className="container">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                        <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary font-amulya">
                             Our Services
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl font-amulya">
                             Comprehensive SEO Solutions
                         </h2>
                         <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -40,7 +40,9 @@ export default function ServicesSection() {
                             <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                                 <Search className="h-5 w-5 text-primary" />
                             </div>
-                            <CardTitle>Technical SEO</CardTitle>
+                            <CardTitle className="font-amulya">
+                                Technical SEO
+                            </CardTitle>
                             <CardDescription>
                                 {`Optimize your website's infrastructure for
                                 search engines`}
@@ -65,7 +67,7 @@ export default function ServicesSection() {
                         <CardFooter>
                             <Link
                                 href="/services/technical-seo"
-                                className="inline-flex items-center text-sm font-medium text-primary"
+                                className="inline-flex items-center text-sm font-semibold text-primary"
                             >
                                 Learn more{' '}
                                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -77,7 +79,9 @@ export default function ServicesSection() {
                             <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                                 <BarChart2 className="h-5 w-5 text-primary" />
                             </div>
-                            <CardTitle>Content Strategy</CardTitle>
+                            <CardTitle className="font-amulya">
+                                Content Strategy
+                            </CardTitle>
                             <CardDescription>
                                 Develop high-quality content that ranks and
                                 converts
@@ -102,7 +106,7 @@ export default function ServicesSection() {
                         <CardFooter>
                             <Link
                                 href="/services/content-strategy"
-                                className="inline-flex items-center text-sm font-medium text-primary"
+                                className="inline-flex items-center text-sm font-semibold text-primary"
                             >
                                 Learn more{' '}
                                 <ArrowRight className="ml-1 h-4 w-4" />
@@ -114,7 +118,9 @@ export default function ServicesSection() {
                             <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                                 <Globe className="h-5 w-5 text-primary" />
                             </div>
-                            <CardTitle>Link Building</CardTitle>
+                            <CardTitle className="font-amulya">
+                                Link Building
+                            </CardTitle>
                             <CardDescription>
                                 Build authority with strategic backlink
                                 acquisition
@@ -141,7 +147,7 @@ export default function ServicesSection() {
                         <CardFooter>
                             <Link
                                 href="/services/link-building"
-                                className="inline-flex items-center text-sm font-medium text-primary"
+                                className="inline-flex items-center text-sm font-semibold text-primary"
                             >
                                 Learn more{' '}
                                 <ArrowRight className="ml-1 h-4 w-4" />

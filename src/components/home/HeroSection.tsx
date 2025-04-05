@@ -4,12 +4,12 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function HeroSection() {
     return (
-        <section className="padding-x padding-y bg-gradient-to-r from-slate-50 to-blue-50 dark:from-slate-950 dark:to-blue-950">
+        <section className="padding-x padding-y bg-gradient-to-r from-gray-50 to-rose-50 dark:from-gray-950 dark:to-rose-950">
             <div className="container">
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                     <div className="flex flex-col justify-center space-y-4">
                         <div className="space-y-2">
-                            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-amulya">
                                 Elevate Your Online Presence with Data-Driven
                                 SEO
                             </h1>
@@ -20,7 +20,7 @@ export default function HeroSection() {
                                 traffic today.
                             </p>
                         </div>
-                        <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                        <div className="flex flex-col gap-2 min-[400px]:flex-row font-amulya">
                             <Button size="lg" className="px-8">
                                 Get Free SEO Audit
                                 <ArrowRight className="ml-2 h-4 w-4" />
