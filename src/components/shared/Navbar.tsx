@@ -75,9 +75,10 @@ export default function Navbar() {
             <div className="container">
                 <nav className="hidden lg:flex items-center justify-between">
                     <Link href={'/'}>
-                        <span className="font-amulya text-xl xl:text-2xl">
-                            MD Ashaduzzaman
-                        </span>
+                        <h2 className="text-2xl font-bold font-amulya">
+                            <span className="">SEO</span>
+                            <span className="text-orange-400">ZenNahi</span>
+                        </h2>
                     </Link>
 
                     <div className="flex items-center">

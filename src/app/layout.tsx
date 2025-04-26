@@ -4,7 +4,9 @@ import Navbar from '@/components/shared/Navbar';
 import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
-    title: 'Home | MD Ashaduzzaman Asad',
+    title: 'Naimur Rahman Nahi - SEO Expert',
+    description:
+        'Discover the expertise of Naimur Rahman Nahi, a seasoned SEO professional dedicated to optimizing online presence, driving organic traffic, and enhancing search engine rankings for businesses worldwide.',
 };
 
 export default function RootLayout({

@@ -62,7 +62,7 @@ export default function AboutMe() {
                         </div>
                     </div>
 
-                    <div className="lg:w-3/5">
+                    <div className="lg:w-3/5 space-y-4">
                         <Badge variant="outline" className="bg-white">
                             About Me
                         </Badge>

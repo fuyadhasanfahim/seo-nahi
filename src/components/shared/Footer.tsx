@@ -61,9 +61,9 @@ const socialLinks = [
 ];
 
 const legalLinks = [
-    { text: 'Privacy Policy', url: '/privacy-policy' },
-    { text: 'Terms of Service', url: '/terms-of-service' },
-    { text: 'Cookie Policy', url: '/cookie-policy' },
+    { text: 'Privacy Policy', url: '#' },
+    { text: 'Terms of Service', url: '#' },
+    { text: 'Cookie Policy', url: '#' },
 ];
 
 export default function Footer() {
@@ -118,6 +118,7 @@ export default function Footer() {
                             <Input
                                 type="email"
                                 placeholder="Your email address"
+                                className="bg-white"
                                 {...form.register('email', { required: true })}
                                 required
                             />
@@ -139,9 +140,9 @@ export default function Footer() {
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
                     <div className="space-y-6">
                         <Link href="/" className="inline-block">
-                            <h2 className="text-2xl font-bold">
+                            <h2 className="text-2xl font-bold font-amulya">
                                 <span className="">SEO</span>
-                                <span className="text-orange-400">Expert</span>
+                                <span className="text-orange-400">ZenNahi</span>
                             </h2>
                         </Link>
                         <p>

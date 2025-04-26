@@ -14,10 +14,7 @@ import Contact from '../shared/Contact';
 
 export default function HeroSection() {
     return (
-        <section
-            className="padding-x padding-y"
-            id="home"
-        >
+        <section className="padding-x padding-y" id="home">
             <div className="container">
                 <div className="grid items-center gap-8 md:grid-cols-2 lg:grid-cols-5">
                     <div className="lg:col-span-3 flex flex-col items-center text-center md:items-start md:text-left space-y-6">
@@ -43,7 +40,7 @@ export default function HeroSection() {
 
                         <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto pt-4">
                             <Link href="#portfolio">
-                                <Button variant="outline" size="lg">
+                                <Button variant="outline" size="lg" className='w-full'>
                                     View Portfolio
                                 </Button>
                             </Link>
