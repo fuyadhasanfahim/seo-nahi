@@ -97,7 +97,7 @@ export default function HeroSection() {
                                     />
                                 </Link>
                                 <Link
-                                    href="https://www.linkedin.com/naimur1995"
+                                    href="https://www.linkedin.com/in/naimur1995"
                                     target="_blank"
                                     className="bg-gray-100 p-2 rounded-full hover:bg-blue-100 transition-colors ease-in-out duration-200"
                                 >
