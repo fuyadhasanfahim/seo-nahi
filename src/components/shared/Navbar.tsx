@@ -17,7 +17,7 @@ import {
     SheetTrigger,
 } from '@/components/ui/sheet';
 import Link from 'next/link';
-import GetQuote from './GetQuote';
+import Contact from './Contact';
 
 interface MenuItem {
     title: string;
@@ -37,10 +37,6 @@ const menu = [
     {
         title: 'Portfolio',
         url: '#portfolio',
-    },
-    {
-        title: 'Contact Me',
-        url: '#contact-me',
     },
 ];
 
@@ -91,7 +87,7 @@ export default function Navbar() {
                         </NavigationMenu>
                     </div>
 
-                    <GetQuote />
+                    <Contact className="rounded-full" icon />
                 </nav>
 
                 <div className="block lg:hidden">
@@ -127,7 +123,7 @@ export default function Navbar() {
                                         )}
                                     </Accordion>
 
-                                    <GetQuote />
+                                    <Contact className="rounded-full" icon />
                                 </div>
                             </SheetContent>
                         </Sheet>

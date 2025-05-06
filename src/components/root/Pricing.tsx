@@ -1,215 +1,190 @@
 'use client';
 
 import { useState } from 'react';
-import { Badge } from '@/components/ui/badge';
+import { CheckCircle } from 'lucide-react';
+import Contact from '../shared/Contact';
+import { Badge } from '../ui/badge';
 import {
     Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
-    CardContent,
-    CardFooter,
-    CardDescription,
-} from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import {
-    CheckCircle,
-    TrendingUp,
-    Award,
-    Zap,
-    BarChart2,
-    Target,
-} from 'lucide-react';
-import Contact from '../shared/Contact';
-import GetQuote from '../shared/GetQuote';
+} from '../ui/card';
+import { Separator } from '../ui/separator';
+import { Button } from '../ui/button';
 
-const seoServices = [
+const digitalMarketingPackages = [
     {
-        id: 'service-1',
-        title: 'Local SEO Package',
-        icon: <Target className="size-6 text-orange-500" />,
-        description:
-            'Perfect for local businesses looking to dominate their service area',
-        monthlyPrice: 499,
-        features: [
-            'Local keyword research',
-            'Google Business Profile optimization',
-            'Local citation building',
-            'Review management',
-            'Monthly ranking reports',
+        id: 'pkg-1',
+        title: 'SEO Package',
+        category: 'SEO',
+        tiers: [
+            {
+                label: 'Small Website (up to 10 pages)',
+                setup: 500,
+                monthly: 300,
+            },
+            {
+                label: 'Medium Website (10–50 pages)',
+                setup: 1000,
+                monthly: 500,
+            },
+            { label: 'Large Website (50+ pages)', setup: 1500, monthly: 700 },
         ],
-        popular: false,
+        features: [
+            'SEO Audit & Setup',
+            'On-Page & Off-Page SEO',
+            'Technical SEO & Mobile Optimization',
+            'Monthly Reporting & Analytics',
+        ],
         color: 'orange',
     },
     {
-        id: 'service-2',
-        title: 'E-commerce SEO Suite',
-        icon: <TrendingUp className="size-6 text-purple-500" />,
-        description:
-            'Comprehensive optimization for online stores and product catalogs',
-        monthlyPrice: 899,
-        features: [
-            'Product page optimization',
-            'Category structure analysis',
-            'Schema markup implementation',
-            'Conversion rate optimization',
-            'Competitor price monitoring',
+        id: 'pkg-2',
+        title: 'Facebook Ads Package',
+        category: 'Advertising',
+        tiers: [
+            { label: 'Small Campaign (Ad spend up to $500)', monthly: 300 },
+            { label: 'Medium Campaign ($500–$2,000)', monthly: 500 },
+            { label: 'Large Campaign ($2,000+)', monthly: 800 },
+            { label: 'One-Time Setup', setup: 100 },
         ],
-        popular: true,
-        color: 'purple',
+        features: [
+            'Ad Setup & Strategy',
+            'Audience Targeting',
+            'Monthly Optimization & Reporting',
+        ],
+        color: 'blue',
     },
     {
-        id: 'service-3',
-        title: 'Content Marketing Pro',
-        icon: <BarChart2 className="size-6 text-green-500" />,
-        description:
-            'Content-driven SEO strategy for sustainable organic growth',
-        monthlyPrice: 699,
-        features: [
-            'Content gap analysis',
-            '4 SEO-optimized articles/month',
-            'Content performance tracking',
-            'Internal linking strategy',
-            'Keyword opportunity research',
+        id: 'pkg-3',
+        title: 'Google Ads Package',
+        category: 'Advertising',
+        tiers: [
+            { label: 'Small Campaign (Ad spend up to $500)', monthly: 300 },
+            { label: 'Medium Campaign ($500–$2,000)', monthly: 500 },
+            { label: 'Large Campaign ($2,000+)', monthly: 800 },
+            { label: 'One-Time Setup', setup: 100 },
         ],
-        popular: false,
+        features: [
+            'Campaign Setup & Keyword Research',
+            'Ad Creation & Optimization',
+            'Monthly Reporting & Adjustments',
+        ],
         color: 'green',
     },
     {
-        id: 'service-4',
-        title: 'Technical SEO Audit',
-        icon: <Zap className="size-6 text-amber-500" />,
-        description: 'Comprehensive site analysis and technical optimization',
-        monthlyPrice: 1299,
-        features: [
-            'Full technical site audit',
-            'Speed optimization',
-            'Mobile usability fixes',
-            'Indexing improvement',
-            'XML sitemap optimization',
+        id: 'pkg-4',
+        title: 'Social Media Marketing Package',
+        category: 'SMM',
+        tiers: [
+            { label: 'Basic Plan (1–2 platforms)', monthly: 400 },
+            { label: 'Medium Plan (2–3 platforms)', monthly: 700 },
+            { label: 'Large Plan (3+ platforms)', monthly: 1000 },
+            { label: 'One-Time Setup', setup: 150 },
         ],
-        popular: false,
-        color: 'amber',
+        features: [
+            'Content Creation & Scheduling',
+            'Community Engagement & Management',
+            'Social Media Ads (Basic)',
+        ],
+        color: 'rose',
     },
     {
-        id: 'service-5',
-        title: 'Enterprise SEO Strategy',
-        icon: <Award className="size-6 text-red-500" />,
-        description:
-            'Custom SEO solutions for large organizations and complex sites',
-        monthlyPrice: 2499,
-        features: [
-            'Custom SEO strategy',
-            'Advanced competitor analysis',
-            'SEO team consultation',
-            'International SEO support',
-            'Executive dashboard reporting',
+        id: 'pkg-5',
+        title: 'Complete Digital Marketing Package',
+        category: 'All-in-One',
+        tiers: [
+            { label: 'Small Campaign', monthly: 1200 },
+            { label: 'Medium Campaign', monthly: 2000 },
+            { label: 'Large Campaign', monthly: 3500 },
         ],
-        popular: false,
-        color: 'red',
-    },
-    {
-        id: 'service-6',
-        title: 'Link Building Campaign',
-        icon: <TrendingUp className="size-6 text-indigo-500" />,
-        description:
-            'Strategic backlink acquisition for domain authority growth',
-        monthlyPrice: 799,
         features: [
-            'Link profile analysis',
-            'Competitor backlink research',
-            '10 quality backlinks/month',
-            'Link toxic removal',
-            'Monthly authority reports',
+            'Full SEO Services',
+            'Facebook & Google Ads Management',
+            'Social Media Marketing',
+            'Monthly Reports & Analytics',
         ],
-        popular: false,
-        color: 'indigo',
+        color: 'teal',
     },
 ];
 
 export default function Pricing() {
     const [showAll, setShowAll] = useState(false);
-    const displayedServices = showAll ? seoServices : seoServices.slice(0, 3);
+    const displayedServices = showAll
+        ? digitalMarketingPackages
+        : digitalMarketingPackages.slice(0, 3);
 
     return (
-        <section className="padding-x padding-y bg-accent" id="pricing">
-            <div className="container">
-                <div className="max-w-3xl mx-auto text-center mb-12">
+        <section className="bg-accent py-20 px-4" id="pricing">
+            <div className="container max-w-6xl mx-auto">
+                <div className="text-center mb-14">
                     <Badge
                         variant="outline"
-                        className="mb-4 px-4 py-1 bg-white"
+                        className="mb-4 bg-white px-4 py-1 text-sm"
                     >
                         Transparent Pricing
                     </Badge>
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
                         SEO Packages That{' '}
                         <span className="text-orange-600">Drive Results</span>
                     </h2>
-                    <p className="text-lg text-gray-600 mb-10">
-                        Customized SEO strategies to match your business goals
-                        and budget. All packages include monthly reporting and a
-                        dedicated SEO manager.
+                    <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                        Customized strategies for your business goals and budget
+                        — all with dedicated support and detailed reporting.
                     </p>
                 </div>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    {displayedServices.map((service, index) => (
+                    {displayedServices.map((pkg) => (
                         <Card
-                            key={index}
-                            className={`relative overflow-hidden transition-all duration-300 hover:shadow-xl border-t-4 ${
-                                service.popular
-                                    ? 'shadow-lg scale-105 border-orange-500 z-10'
-                                    : 'shadow-md hover:scale-102 border-' +
-                                      service.color +
-                                      '-400'
-                            }`}
+                            key={pkg.id}
+                            className="rounded-2xl shadow-md border-t-4"
+                            style={{
+                                borderTopColor: `var(--${pkg.color}-500, ${pkg.color})`,
+                            }}
                         >
-                            <CardHeader
-                                className={`p-4 ${
-                                    service.popular ? 'bg-orange-50' : ''
-                                }`}
-                            >
-                                <div className="flex justify-between items-center mb-2">
-                                    {service.icon}
-                                    <Badge
-                                        variant="outline"
-                                        className="font-normal text-xs"
-                                    >
-                                        Monthly Plan
-                                    </Badge>
-                                </div>
-                                <CardTitle className="text-2xl font-bold">
-                                    {service.title}
+                            <CardHeader>
+                                <CardTitle className="text-xl">
+                                    {pkg.title}
                                 </CardTitle>
-                                <CardDescription className="text-sm">
-                                    {service.description}
+                                <CardDescription className="capitalize">
+                                    {pkg.category}
                                 </CardDescription>
                             </CardHeader>
 
-                            <CardContent className="pt-6">
-                                <div className="flex items-baseline mb-6">
-                                    <span className="text-4xl font-bold">
-                                        ${service.monthlyPrice}
-                                    </span>
-                                    <span className="text-gray-500 ml-2">
-                                        /month
-                                    </span>
-                                </div>
-
-                                <Separator className="mb-6" />
-
-                                <ul className="space-y-3">
-                                    {service.features.map((feature, idx) => (
+                            <CardContent>
+                                <ul className="space-y-2 mb-4">
+                                    {pkg.features.map((feature, i) => (
                                         <li
-                                            key={idx}
-                                            className="flex items-start gap-3"
+                                            key={i}
+                                            className="flex items-start gap-2 text-sm"
                                         >
                                             <CheckCircle
-                                                className={`size-5 mt-0.5 text-${service.color}-500`}
+                                                className={`size-5 text-${pkg.color}-500`}
                                             />
-                                            <span className="text-gray-700">
-                                                {feature}
-                                            </span>
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <Separator className="my-4" />
+
+                                <ul className="space-y-2 text-sm">
+                                    {pkg.tiers.map((tier, i) => (
+                                        <li key={i}>
+                                            <strong>{tier.label}</strong>:{' '}
+                                            {tier.setup
+                                                ? `$${tier.setup} (Setup)`
+                                                : ''}
+                                            {tier.setup && tier.monthly
+                                                ? ' + '
+                                                : ''}
+                                            {tier.monthly
+                                                ? `$${tier.monthly}/month`
+                                                : ''}
                                         </li>
                                     ))}
                                 </ul>
@@ -222,24 +197,22 @@ export default function Pricing() {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center">
+                <div className="text-center mt-12">
                     <Button
                         variant="outline"
                         size="lg"
-                        className="cursor-pointer border-orange-600 text-orange-600 hover:bg-orange-50"
+                        className="text-orange-600 border-orange-600 hover:bg-orange-50"
                         onClick={() => setShowAll((prev) => !prev)}
                     >
                         {showAll ? 'Show Less Packages' : 'Show All Packages'}
                     </Button>
                 </div>
 
-                <div className="max-w-3xl mx-auto mt-20 bg-orange-50 p-6 rounded-xl shadow-sm">
-                    <h3 className="text-xl font-bold text-center mb-6">
+                <div className="max-w-3xl mx-auto mt-20 bg-orange-50 p-8 rounded-2xl shadow-sm text-center">
+                    <h3 className="text-2xl font-bold mb-6">
                         Looking for a custom SEO solution?
                     </h3>
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <GetQuote />
-                    </div>
+                    <Contact className="rounded-full" icon />
                 </div>
             </div>
         </section>

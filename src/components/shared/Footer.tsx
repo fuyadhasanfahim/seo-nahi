@@ -1,31 +1,17 @@
 'use client';
 
 import Link from 'next/link';
-import {
-    Search,
-    Mail,
-    Phone,
-    MapPin,
-    ArrowRight,
-    Twitter,
-    Linkedin,
-    Instagram,
-    Facebook,
-} from 'lucide-react';
+import { Search, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 
 const services = [
-    { text: 'SEO Audit', url: '/services/seo-audit' },
-    { text: 'Keyword Research', url: '/services/keyword-research' },
-    { text: 'On-Page SEO', url: '/services/on-page-seo' },
-    { text: 'Technical SEO', url: '/services/technical-seo' },
-    { text: 'Local SEO', url: '/services/local-seo' },
-    { text: 'Link Building', url: '/services/link-building' },
-    { text: 'Content Strategy', url: '/services/content-strategy' },
-    { text: 'Analytics & Reporting', url: '/services/analytics' },
+    { text: 'SEO', url: '#services' },
+    { text: "Facebook AD's", url: '#services' },
+    { text: "Google AD's", url: '#services' },
+    { text: 'Social Media Marketing', url: '#services' },
 ];
 
 const quickLinks = [
@@ -42,21 +28,6 @@ const quickLinks = [
     {
         title: 'Contact Me',
         url: '#contact-me',
-    },
-];
-
-const socialLinks = [
-    {
-        name: 'LinkedIn',
-        icon: Linkedin,
-        url: 'https://linkedin.com/in/seoexpert',
-    },
-    { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/seoexpert' },
-    { name: 'Facebook', icon: Facebook, url: 'https://facebook.com/seoexpert' },
-    {
-        name: 'Instagram',
-        icon: Instagram,
-        url: 'https://instagram.com/seoexpert',
     },
 ];
 
@@ -146,24 +117,10 @@ export default function Footer() {
                             </h2>
                         </Link>
                         <p>
-                            Driving organic growth through data-driven SEO
-                            strategies that deliver measurable results for
-                            businesses of all sizes.
+                            Helping businesses grow online by using smart,
+                            data-driven SEO strategies that get real, measurable
+                            results.
                         </p>
-                        <div className="flex space-x-4">
-                            {socialLinks.map((social, idx) => (
-                                <Link
-                                    key={idx}
-                                    href={social.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-orange-500"
-                                    aria-label={social.name}
-                                >
-                                    <social.icon size={18} />
-                                </Link>
-                            ))}
-                        </div>
                     </div>
 
                     <div>
@@ -209,19 +166,31 @@ export default function Footer() {
                     <div>
                         <h3 className="mb-6 text-lg font-bold ">Contact</h3>
                         <ul className="space-y-4">
-                            <li className="flex items-start">
-                                <Mail
-                                    className="mr-3 mt-1 text-orange-400"
-                                    size={18}
-                                />
-                                <span>contact@seoexpert.com</span>
+                            <li>
+                                <Link
+                                    href={'mailto:seozennahi@gmail.com'}
+                                    target="_blank"
+                                    className="flex items-start"
+                                >
+                                    <Mail
+                                        className="mr-3 mt-1 text-orange-400"
+                                        size={18}
+                                    />
+                                    <span>seozennahi@gmail.com</span>
+                                </Link>
                             </li>
                             <li className="flex items-start">
-                                <Phone
-                                    className="mr-3 mt-1 text-orange-400"
-                                    size={18}
-                                />
-                                <span>+1 (555) 123-4567</span>
+                                <Link
+                                    href={'tel:+8801787523317'}
+                                    target="_blank"
+                                    className="flex items-start"
+                                >
+                                    <Phone
+                                        className="mr-3 mt-1 text-orange-400"
+                                        size={18}
+                                    />
+                                    <span>+880 17-87 523317</span>
+                                </Link>
                             </li>
                             <li className="flex items-start">
                                 <MapPin
@@ -229,9 +198,7 @@ export default function Footer() {
                                     size={18}
                                 />
                                 <span>
-                                    123 SEO Street, Digital City
-                                    <br />
-                                    CA 94103, United States
+                                    Gaibandha-5700, <br /> Rangpur, Bangladesh
                                 </span>
                             </li>
                         </ul>

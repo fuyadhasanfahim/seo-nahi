@@ -6,7 +6,7 @@ import { Toaster } from 'sonner';
 export const metadata: Metadata = {
     title: 'Naimur Rahman Nahi - SEO Expert',
     description:
-        'Discover the expertise of Naimur Rahman Nahi, a seasoned SEO professional dedicated to optimizing online presence, driving organic traffic, and enhancing search engine rankings for businesses worldwide.',
+        'A Digital Marketing Expert specializing in driving online growth and engagement through innovative strategies. I specialize in Facebook and Instagram marketing, Google Ads, SEO, and comprehensive digital marketing strategies. My goal is to help businesses grow by creating impactful campaigns that drive engagement and deliver measurable results.',
 };
 
 export default function RootLayout({

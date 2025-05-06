@@ -1,48 +1,46 @@
 import { cn } from '@/lib/utils';
 import { Marquee } from '../ui/marquee';
-import Image from 'next/image';
 import { Badge } from '../ui/badge';
 
-export const reviews = [
+const reviews = [
     {
-        name: 'kaiserstudios',
-        username: '@kaiserstudios',
-        body: 'There’s a reason I keep coming back here – and it’s not without reason! The quality and service are simply outstanding. The quick response to inquiries shows that great attention to detail is given. You truly feel understood because they know...',
+        name: 'Jenna Hartley',
+        username: '@jenna_h',
+        body: 'Incredible experience from start to finish. The communication was clear, the results were flawless, and everything was delivered right on time. Truly professional work!',
         stars: 5,
-        img: 'https://res.cloudinary.com/dny7zfbg9/image/upload/v1744623733/vyyg1frmricrgc6xv7xt.webp',
+        img: 'https://res.cloudinary.com/dny7zfbg9/image/upload/v1744625555/sample-avatar1.webp',
     },
     {
-        name: 'Rickzb',
-        username: '@rickzb',
-        body: 'We’ve used Asad multiple times now for clear cutting our product images, and he consistently delivers exceptional results. Every time we have a job like this, we go straight to him—his attention to detail and fast turnaround are second to...',
+        name: 'Olivier Gray',
+        username: '@olivierg',
+        body: 'The team was super responsive and paid great attention to detail. Our brand visuals look sharper than ever — couldn’t be more pleased with the outcome!',
+        stars: 5,
         img: '',
-        stars: 5,
     },
     {
-        name: 'Bykmdesigns',
-        username: '@bykmdesigns',
-        body: 'Md was easy to work with from the start. Very communicative and responsive. The work was delivered to me within the delivery time frame and everything was easy to access. The whole process was pretty seamless and I have no complaints. Thank you!',
+        name: 'ThePixelRoom',
+        username: '@thepixelroom',
+        body: 'Fast, friendly, and top-quality service. We’ve used them for multiple campaigns now and each time the delivery has exceeded our expectations.',
+        stars: 5,
+        img: 'https://res.cloudinary.com/dny7zfbg9/image/upload/v1744625620/sample-avatar2.webp',
+    },
+    {
+        name: 'MartaDesigns',
+        username: '@martadesigns',
+        body: 'Everything went smoothly — super happy with the final results! Will definitely be back for more projects soon. Thank you for the great work!',
+        stars: 5,
         img: '',
-        stars: 5,
     },
     {
-        name: 'Fabianheigel',
-        username: '@fabianheigel',
-        body: 'As always I am completely satisfied with the results that I got! Communication was super convenient, delivery time was very quick and the result is 100% what I requested. Would absolutely recommend and will definitely come back with more requests! Thank you!',
-        img: '',
+        name: 'Tom Kline',
+        username: '@tomkline',
+        body: 'A flawless experience every single time. The team delivers high-quality work with fast turnaround and excellent communication. Highly recommended!',
         stars: 5,
-    },
-    {
-        name: 'Berqen',
-        username: '@berqen',
-        body: 'Great job well done, once again. Been using this seller for a lot of different work recently, and every time the results are great!',
-        img: 'https://res.cloudinary.com/dny7zfbg9/image/upload/v1744624523/uh3vvlum0ibdza6sp9ab.webp',
-        stars: 5,
+        img: 'https://res.cloudinary.com/dny7zfbg9/image/upload/v1744625665/sample-avatar3.webp',
     },
 ];
 
 const ReviewCard = ({
-    img,
     name,
     username,
     body,
@@ -61,19 +59,9 @@ const ReviewCard = ({
             )}
         >
             <div className="flex items-center gap-3 mb-3">
-                {img ? (
-                    <Image
-                        className="rounded-full object-cover border"
-                        width={40}
-                        height={40}
-                        alt={name}
-                        src={img}
-                    />
-                ) : (
-                    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white font-semibold">
-                        {name[0].toUpperCase()}
-                    </div>
-                )}
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white font-semibold">
+                    {name[0].toUpperCase()}
+                </div>
                 <div>
                     <figcaption className="text-sm font-semibold dark:text-white">
                         {name}

@@ -9,12 +9,10 @@ export default function CallToAction() {
                 <div className="flex w-full flex-col gap-16 overflow-hidden rounded-lg bg-accent p-8 md:rounded-xl lg:flex-row lg:items-center lg:p-16">
                     <div className="flex-1 text-center lg:text-start">
                         <h3 className="mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6 font-amulya">
-                            Capture Moments That Matter
+                            Ready to Boost Your Business?
                         </h3>
                         <p className="max-w-xl mx-auto lg:mx-0 text-muted-foreground lg:text-lg">
-                            Whether it’s your big day or a quiet candid moment,
-                            we’re here to turn your story into timeless images.
-                            Let’s create something beautiful together.
+                            Let’s get started today!
                         </p>
                     </div>
 

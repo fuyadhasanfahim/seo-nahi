@@ -1,14 +1,6 @@
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import {
-    BarChart3,
-    Globe,
-    LineChart,
-    Search,
-    Target,
-    Trophy,
-} from 'lucide-react';
+import { Trophy } from 'lucide-react';
 
 export default function AboutMe() {
     return (
@@ -19,7 +11,7 @@ export default function AboutMe() {
                         <div className="relative rounded-xl overflow-hidden">
                             <div className="aspect-[4/5] relative">
                                 <Image
-                                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+                                    src="https://res.cloudinary.com/dgmq1unhw/image/upload/v1746540175/tinywow_480741922_122098173680784725_1195241694196450822_n_78031470_bkjdjl.jpg"
                                     alt="SEO Expert - Naimur Rahman"
                                     fill
                                     priority
@@ -68,11 +60,10 @@ export default function AboutMe() {
                         </Badge>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                            Driving{' '}
-                            <span className="text-orange-600">
-                                Organic Growth
-                            </span>{' '}
-                            Through Strategic SEO
+                            Helping{' '}
+                            <span className="text-orange-600">Businesses</span>{' '}
+                            grow online by using smart, data-driven SEO
+                            strategies that get real, measurable results.
                         </h2>
 
                         <div className="space-y-6 text-gray-700 mb-8">
@@ -110,49 +101,6 @@ export default function AboutMe() {
                                 transparent, results-focused solutions.
                             </p>
                         </div>
-
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-                            <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                                <Search className="size-8 text-orange-600 mb-2" />
-                                <span className="text-sm font-medium">
-                                    Technical SEO
-                                </span>
-                            </div>
-                            <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                                <BarChart3 className="size-8 text-orange-600 mb-2" />
-                                <span className="text-sm font-medium">
-                                    Keyword Research
-                                </span>
-                            </div>
-                            <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                                <Globe className="size-8 text-orange-600 mb-2" />
-                                <span className="text-sm font-medium">
-                                    Local SEO
-                                </span>
-                            </div>
-                            <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                                <LineChart className="size-8 text-orange-600 mb-2" />
-                                <span className="text-sm font-medium">
-                                    Analytics
-                                </span>
-                            </div>
-                            <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                                <Target className="size-8 text-orange-600 mb-2" />
-                                <span className="text-sm font-medium">
-                                    Link Building
-                                </span>
-                            </div>
-                            <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
-                                <Search className="size-8 text-orange-600 mb-2" />
-                                <span className="text-sm font-medium">
-                                    E-commerce SEO
-                                </span>
-                            </div>
-                        </div>
-
-                        <Button className="bg-orange-600 hover:bg-orange-700">
-                            Download SEO Case Studies
-                        </Button>
                     </div>
                 </div>
             </div>
