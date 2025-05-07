@@ -23,15 +23,15 @@ const digitalMarketingPackages = [
         tiers: [
             {
                 label: 'Small Website (up to 10 pages)',
-                setup: 500,
-                monthly: 300,
+                setup: 400,
+                monthly: 250,
             },
             {
                 label: 'Medium Website (10–50 pages)',
-                setup: 1000,
-                monthly: 500,
+                setup: 700,
+                monthly: 350,
             },
-            { label: 'Large Website (50+ pages)', setup: 1500, monthly: 700 },
+            { label: 'Large Website (50+ pages)', setup: 1000, monthly: 500 },
         ],
         features: [
             'SEO Audit & Setup',
@@ -46,10 +46,10 @@ const digitalMarketingPackages = [
         title: 'Facebook Ads Package',
         category: 'Advertising',
         tiers: [
-            { label: 'Small Campaign (Ad spend up to $500)', monthly: 300 },
-            { label: 'Medium Campaign ($500–$2,000)', monthly: 500 },
-            { label: 'Large Campaign ($2,000+)', monthly: 800 },
-            { label: 'One-Time Setup', setup: 100 },
+            { label: 'Small Campaign (Ad spend up to $500)', monthly: 100 },
+            { label: 'Medium Campaign ($500–$2,000)', monthly: 200 },
+            { label: 'Large Campaign ($2,000+)', monthly: 300 },
+            { label: 'One-Time Setup', setup: 80 },
         ],
         features: [
             'Ad Setup & Strategy',
@@ -63,9 +63,9 @@ const digitalMarketingPackages = [
         title: 'Google Ads Package',
         category: 'Advertising',
         tiers: [
-            { label: 'Small Campaign (Ad spend up to $500)', monthly: 300 },
-            { label: 'Medium Campaign ($500–$2,000)', monthly: 500 },
-            { label: 'Large Campaign ($2,000+)', monthly: 800 },
+            { label: 'Small Campaign (Ad spend up to $500)', monthly: 100 },
+            { label: 'Medium Campaign ($500–$2,000)', monthly: 200 },
+            { label: 'Large Campaign ($2,000+)', monthly: 300 },
             { label: 'One-Time Setup', setup: 100 },
         ],
         features: [
@@ -80,10 +80,13 @@ const digitalMarketingPackages = [
         title: 'Social Media Marketing Package',
         category: 'SMM',
         tiers: [
-            { label: 'Basic Plan (1–2 platforms)', monthly: 400 },
-            { label: 'Medium Plan (2–3 platforms)', monthly: 700 },
-            { label: 'Large Plan (3+ platforms)', monthly: 1000 },
-            { label: 'One-Time Setup', setup: 150 },
+            { label: 'Basic Plan (1-2 platforms, 3 posts/week)', monthly: 150 },
+            {
+                label: 'Medium Plan (2-3 platforms, 5 posts/week)',
+                monthly: 250,
+            },
+            { label: 'Large Plan (3+ platforms, 7 posts/week)', monthly: 500 },
+            { label: 'One-Time Setup', setup: 100 },
         ],
         features: [
             'Content Creation & Scheduling',
@@ -97,9 +100,9 @@ const digitalMarketingPackages = [
         title: 'Complete Digital Marketing Package',
         category: 'All-in-One',
         tiers: [
-            { label: 'Small Campaign', monthly: 1200 },
-            { label: 'Medium Campaign', monthly: 2000 },
-            { label: 'Large Campaign', monthly: 3500 },
+            { label: 'Small Campaign', monthly: 700 },
+            { label: 'Medium Campaign', monthly: 1200 },
+            { label: 'Large Campaign', monthly: 2000 },
         ],
         features: [
             'Full SEO Services',
@@ -127,9 +130,9 @@ export default function Pricing() {
                     >
                         Transparent Pricing
                     </Badge>
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-                        SEO Packages That{' '}
-                        <span className="text-orange-600">Drive Results</span>
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 max-w-3xl mx-auto">
+                        Digital Marketing Packages That{' '}
+                        <span className="text-orange-600">Driven Results</span>
                     </h2>
                     <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                         Customized strategies for your business goals and budget

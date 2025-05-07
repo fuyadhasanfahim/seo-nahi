@@ -29,13 +29,12 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="text-lg text-gray-600 max-w-xl">
-                            A Digital Marketing Expert specializing in driving
-                            online growth and engagement through innovative
-                            strategies. I specialize in Facebook and Instagram
-                            marketing, Google Ads, SEO, and comprehensive
-                            digital marketing strategies. My goal is to help
-                            businesses grow by creating impactful campaigns that
-                            drive engagement and deliver measurable results.
+                            I’m a Digital Marketing Expert focused on helping
+                            businesses grow online. I specialize in SEO,
+                            Facebook Ads, Google Ads, Social Media Marketing and
+                            creating effective digital marketing strategies. My
+                            goal is to drive more engagement and deliver
+                            measurable results that help businesses succeed.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto pt-4">

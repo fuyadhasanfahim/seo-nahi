@@ -62,43 +62,40 @@ export default function AboutMe() {
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
                             Helping{' '}
                             <span className="text-orange-600">Businesses</span>{' '}
-                            grow online by using smart, data-driven SEO
-                            strategies that get real, measurable results.
+                            thrive online with smart, data-driven SEO strategies
+                            that deliver real, measurable results.
                         </h2>
 
                         <div className="space-y-6 text-gray-700 mb-8">
                             <p>
-                                Hello! I&apos;m{' '}
+                                Hi,{' '}
                                 <strong className="text-orange-600">
-                                    Naimur Rahman
-                                </strong>
-                                , a seasoned SEO strategist with over{' '}
-                                <strong>5+ years</strong> of experience
-                                transforming businesses&apos; digital presence.
-                                As the{' '}
-                                <strong>Founder and Lead Consultant</strong> at
-                                DigiRank Solutions, I&apos;ve helped companies
-                                of all sizes achieve sustainable growth through
-                                data-driven SEO strategies.
+                                    Naimur Rahman,
+                                </strong>{' '}
+                                a digital marketer and SEO expert with 3 years
+                                of experience helping businesses improve their
+                                online presence. I work independently,
+                                partnering with companies to create custom SEO
+                                strategies that really work.
                             </p>
 
                             <p>
-                                I specialize in comprehensive technical SEO
-                                audits, content strategy optimization, local SEO
-                                domination, and implementing advanced analytics
-                                that translate rankings into revenue. My
-                                expertise lies at the intersection of technical
-                                proficiency and strategic marketing.
+                                I specialize in things like technical SEO
+                                audits, content optimization, local SEO, and
+                                using data to help businesses grow their traffic
+                                and turn it into real results. I love combining
+                                my technical skills with smart marketing
+                                strategies to make SEO easier to understand and
+                                more impactful for my clients.
                             </p>
 
                             <p>
-                                My clients consistently achieve{' '}
-                                <strong>first-page rankings</strong> for
-                                competitive keywords, with an average of{' '}
-                                <strong>67% increase in organic traffic</strong>{' '}
-                                within the first 6 months of our partnership. I
-                                take pride in demystifying SEO and providing
-                                transparent, results-focused solutions.
+                                By creating tailored SEO strategies, I help
+                                clients improve rankings and increase organic
+                                traffic quickly, often seeing results within a
+                                few months. My approach makes SEO simple,
+                                transparent, and focused on delivering
+                                measurable success.
                             </p>
                         </div>
                     </div>
