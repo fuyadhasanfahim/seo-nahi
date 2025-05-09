@@ -68,7 +68,7 @@ export default function AboutMe() {
 
                         <div className="space-y-6 text-gray-700 mb-8">
                             <p>
-                                Hi,{' '}
+                                Hi, I’m{' '}
                                 <strong className="text-orange-600">
                                     Naimur Rahman,
                                 </strong>{' '}
