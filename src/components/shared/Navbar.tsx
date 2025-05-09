@@ -93,9 +93,10 @@ export default function Navbar() {
                 <div className="block lg:hidden">
                     <div className="flex items-center justify-between">
                         <Link href={'/'}>
-                            <span className="font-amulya text-xl">
-                                MD Ashaduzzaman
-                            </span>
+                            <h2 className="text-xl font-bold font-amulya">
+                                <span className="">SEO</span>
+                                <span className="text-orange-400">ZenNahi</span>
+                            </h2>
                         </Link>
 
                         <Sheet>
@@ -106,9 +107,12 @@ export default function Navbar() {
                                 <SheetHeader>
                                     <SheetTitle>
                                         <Link href={'/'}>
-                                            <span className="font-amulya text-xl">
-                                                MD Ashaduzzaman
-                                            </span>
+                                            <h2 className="text-xl font-bold font-amulya">
+                                                <span className="">SEO</span>
+                                                <span className="text-orange-400">
+                                                    ZenNahi
+                                                </span>
+                                            </h2>
                                         </Link>
                                     </SheetTitle>
                                 </SheetHeader>
